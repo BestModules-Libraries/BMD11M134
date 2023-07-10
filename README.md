@@ -1,13 +1,13 @@
 <div align=center>
-<img src="https://github.com/BestModules-Libraries/img/blob/main/BMK22M131_V1.0.png" width="240" height="240"> 
+<img src="https://github.com/BestModules-Libraries/img/blob/main/BMD11M134_V1.0.png" width="240" height="240"> 
 </div> 
 
-BMK22M131
+BMD11M134
 ===========================================================
 
-The BMK22M131 is a Button-LED module from Best Modules, which uses the I2C communication method. This document provides the description of the BMK22M131 Arduino Lib functions and how to install the Arduino Lib. The example demonstrates the button recognition, LED brightness control and other functions.
+The Best Modules BMD11M134 is a 4-digit digital tube module, which uses the I2C communication method. This document provides the description of the BMD11M134 Arduino Lib function and how to install the Arduino Lib. The example demonstrates the function of displaying characters by using digital tubes.
 
-This library can be installed via the Arduino Library manager. Search for **BMK22M131**. 
+This library can be installed via the Arduino Library manager. Search for **BMD11M134**. 
 
 Repository Contents
 -------------------
@@ -20,7 +20,7 @@ Repository Contents
 Documentation 
 -------------------
 
-* **[BMK22M131 Arduino Library V1.0.1 Description v100](https://www.bestmodulescorp.com/bmk22m131.html#tab-product2)** - Arduino Library Description.
+* **[BMD11M134 Arduino Library V1.0.1 Description v100](https://www.bestmodulescorp.com/bmd11m134.html#tab-product2)** - Arduino Library Description.
 
 Version History  
 -------------------
