@@ -1,0 +1,31 @@
+﻿# Coloring Map For （ ）
+##############################################
+##############################################
+# Classes and Objects (KEYWORD1)
+##############################################
+BMD11M134	KEYWORD1
+##############################################
+# Methods and Functions (KEYWORD2)
+##############################################
+begin	KEYWORD2
+getNumber KEYWORD2
+clear	KEYWORD2
+decimalOnSingle	KEYWORD2
+decimalOffSingle	KEYWORD2
+decimalOn	KEYWORD2
+decimalOff	KEYWORD2
+colonOnSingle	KEYWORD2
+colonOffSingle	KEYWORD2
+colonOn	KEYWORD2
+colonOff	KEYWORD2
+shiftRight	KEYWORD2
+shiftLeft	KEYWORD2
+printChar	KEYWORD2
+updateDisplay	KEYWORD2
+printStr	KEYWORD2
+setBrightness	KEYWORD2
+getFWVer	KEYWORD2
+##############################################
+# Constants (LITERAL1)
+##############################################
+
