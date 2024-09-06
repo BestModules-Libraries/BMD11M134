@@ -14,23 +14,25 @@ void setup()
   Serial.begin(9600);
   Display.begin();
 }
- 
+
 void loop()
 {
   sdata="BEST";
   sdata.toCharArray(cdata,5);
   Display.printStr(cdata);
-  for(uint8_t i = 0; i < 6; i++)
+  for(uint8_t i = 0; i < 4; i++)
   {
     delay(300);
-    Display.shiftRight();
+     Display.shiftRight();
   }
-  sdata="BEST";
+    delay(1000);
+   sdata="BEST";
   sdata.toCharArray(cdata,5);
   Display.printStr(cdata);
-    for(uint8_t i = 0; i < 6; i++)
+  for(uint8_t i = 0; i < 4; i++)
   {
     delay(300);
     Display.shiftLeft();
   }
+  delay(1000);
 }

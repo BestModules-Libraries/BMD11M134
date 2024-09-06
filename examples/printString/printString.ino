@@ -18,7 +18,8 @@ void setup()
   Serial.println("Connected!");
   sdata="HOLTBEST";
   sdata.toCharArray(cdata,9);
-   Display.printStr(cdata);
+  Display.printStr(cdata);
+ ;
 }
  
 void loop()

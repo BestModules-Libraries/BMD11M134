@@ -1,8 +1,8 @@
 /*************************************************
-File:       	    BM_Alphanumeric_Display.h
-Author:            	BESTMODULE
-Description:        Define classes and required variables
-Version:        V1.0.1   -- 2023-09-21
+File:         BMD11M134.h
+Author:       BEST MODULES CORP.
+Description:  Define classes and required variables
+Version:      V1.0.2   -- 2024-08-30
 **************************************************/
 #ifndef _BMD11M134_H
 #define _BMD11M134_H
