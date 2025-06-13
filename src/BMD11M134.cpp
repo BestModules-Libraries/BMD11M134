@@ -2,14 +2,14 @@
 File:          BMD11M134.cpp
 Author:        BEST MODULES CORP.
 Description:   IIC communication with BMD11M134, let BMD11M134 display numbers, characters, etc
-Version:       V1.0.2   -- 2024-08-30
+Version:       V1.0.3   -- 2025-04-02
 ******************************************************************/
 #include "BMD11M134.h"
 /***************************************************************************************
 Description: Constructor
 Parameters:       *theWire : Wire object if your board has more than one I2C interface        
-Return:          
-Others:     
+Return:            none
+Others:            none     
 ***************************************************************************************/
 BMD11M134::BMD11M134(TwoWire *theWire)
 {	
@@ -17,9 +17,9 @@ BMD11M134::BMD11M134(TwoWire *theWire)
 }
 /**********************************************************
 Description: Module Initial
-Parameters:  void            
+Parameters:  none            
 Return:      void     
-Others:       
+Others:      none       
 **********************************************************/
 void BMD11M134::begin()
 {
@@ -30,9 +30,9 @@ void BMD11M134::begin()
 
 /********************************************************************
 Description: Obtain the number of expansion modules
-Parameters:  void       
+Parameters:  none       
 Return:      Number of expansion modules
-Others:         
+Others:      none         
 *********************************************************************/
 uint8_t BMD11M134::getNumber()
 {
@@ -63,12 +63,12 @@ uint8_t BMD11M134::getNumber()
 
 /********************************************************************
 Description: Clear display
-Parameters:  void             
+Parameters:  none             
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE  
+Others:      none         
 *********************************************************************/
 uint8_t BMD11M134::clear()
 {
@@ -85,9 +85,9 @@ Description: Displays the decimal point on the specified nixie
 Parameters:  displayNumber: Module Number        
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE.    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE     
+Others:      none         
 ****************************************************************/
 uint8_t BMD11M134::decimalOnSingle(uint8_t displayNumber)
 {
@@ -99,9 +99,9 @@ Description: The decimal point on the specified nixie is not displayed
 Parameters:  displayNumber: Module Number       
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE   
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE   
+Others:      none         
 ***************************************************************/
 uint8_t BMD11M134::decimalOffSingle(uint8_t displayNumber)
 {
@@ -110,12 +110,12 @@ uint8_t BMD11M134::decimalOffSingle(uint8_t displayNumber)
 
 /**********************************************************
 Description: Displays decimal points on all nixie tubes
-Parameters:  void            
+Parameters:  none            
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE    
+Others:      none          
 **********************************************************/
 uint8_t BMD11M134::decimalOn()
 {
@@ -133,12 +133,12 @@ uint8_t BMD11M134::decimalOn()
 
 /*****************************************************************
 Description: Do not display decimal points on all nixie tubes
-Parameters:  void            
+Parameters:  none            
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE  
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE 
+Others:      none          
 *****************************************************************/
 uint8_t BMD11M134::decimalOff()
 {
@@ -159,9 +159,9 @@ Description: Displays the colon on the specified digit tube
 Parameters:  displayNumber: Module Number         
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-             0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE   
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE   
+Others:      none          
 **********************************************************/
 uint8_t BMD11M134::colonOnSingle(uint8_t displayNumber)
 {
@@ -173,9 +173,9 @@ Description: Does not display colons on the specified digit tube
 Parameters:  displayNumber: Module Number        
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE    
+Others:      none         
 **********************************************************/
 uint8_t BMD11M134::colonOffSingle(uint8_t displayNumber)
 {
@@ -184,12 +184,12 @@ uint8_t BMD11M134::colonOffSingle(uint8_t displayNumber)
 
 /**************************************************************
 Description: Displays colons on all nibs
-Parameters:               
+Parameters:  none             
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			 0x80: INSTRUCTION_NOT_SUPPOR
-			 0xA0: SLAVE_NO_RESPONSE   
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE   
+Others:      none          
 ***************************************************************/
 uint8_t BMD11M134::colonOn()
 {
@@ -209,12 +209,12 @@ uint8_t BMD11M134::colonOn()
 
 /***************************************************************
 Description: Do not Displays colons on all nibs
-Parameters:              
+Parameters:  none            
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			 0x80: INSTRUCTION_NOT_SUPPOR
-			 0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE     
+Others:      none          
 ***************************************************************/
 uint8_t BMD11M134::colonOff()
 {
@@ -237,9 +237,9 @@ Description: Display content moved right
 Parameters:  shiftAmt: The number of bits per move         
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE    
+Others:      none   
 **********************************************************/
 uint8_t BMD11M134::shiftRight(uint8_t shiftAmt)
 {
@@ -267,9 +267,9 @@ Description: Display content moved left.
 Parameters:  shiftAmt: The number of bits per move        
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-		       	 0xA0: SLAVE_NO_RESPONSE    
-Others:         
+	          0x80: INSTRUCTION_NOT_SUPPOR
+	         0xA0: SLAVE_NO_RESPONSE    
+Others:      none   
 **********************************************************/
 uint8_t BMD11M134::shiftLeft(uint8_t shiftAmt)
 {
@@ -304,7 +304,7 @@ Parameters:  displayNumber: Module Number
              displayChar: character
              digit: Digit number     
 Return:      void
-Others:         
+Others:      none    
 *******************************************************************/
 void BMD11M134::printChar(uint8_t displayNumber, uint8_t displayChar, uint8_t digit)
 {
@@ -343,12 +343,12 @@ void BMD11M134::printChar(uint8_t displayNumber, uint8_t displayChar, uint8_t di
 
 /**********************************************************
 Description: Update the display
-Parameters:  void            
+Parameters:  none            
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
              0x80: INSTRUCTION_NOT_SUPPOR
              0xA0: SLAVE_NO_RESPONSE   
-Others:         
+Others:      none         
 **********************************************************/
 uint8_t BMD11M134::updateDisplay()
 {
@@ -376,9 +376,9 @@ Description: Display string
 Parameters:  buffer[]: Character array 
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE   
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE   
+Others:      none         
 **********************************************************/
 uint8_t BMD11M134::printStr(char buffer[])
 {
@@ -420,9 +420,9 @@ Parameters:  displayNumber: Module Number
              bightness:Brightness range: 0~2
 Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
-			       0x80: INSTRUCTION_NOT_SUPPOR
-			       0xA0: SLAVE_NO_RESPONSE   
-Others:         
+	         0x80: INSTRUCTION_NOT_SUPPOR
+	          0xA0: SLAVE_NO_RESPONSE   
+Others:      none   
 **********************************************************/
 uint8_t BMD11M134::setBrightness(uint8_t displayNumber, uint8_t brightness)
 {
@@ -444,7 +444,7 @@ uint8_t BMD11M134::setBrightness(uint8_t displayNumber, uint8_t brightness)
 Description: Get version number
 Parameters:  displayNumber: Module Number 	 
 Return:      version number     
-Others:         
+Others:      none   
 **********************************************************/
 uint16_t BMD11M134::getFWVer(uint8_t displayNumber)
 {
@@ -478,7 +478,7 @@ Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
              0x80: INSTRUCTION_NOT_SUPPOR
              0xA0: SLAVE_NO_RESPONSE  
-Others:         
+Others:      none   
 **********************************************************/
 uint8_t BMD11M134::setDecimalOnOff(uint8_t displayNumber, bool turnOnDecimal)
 {
@@ -505,7 +505,7 @@ Return:      0x00: CMD_TRANSFER_SUCCESS
              0x40: CHECKSUM_ERROR
              0x80: INSTRUCTION_NOT_SUPPOR
              0xA0: SLAVE_NO_RESPONSE  
-Others:         
+Others:      none   
 **********************************************************/
 uint8_t BMD11M134::setColonOnOff(uint8_t displayNumber, bool turnOnColon)
 {
@@ -528,7 +528,7 @@ Parameters:  id: The module number
              len:Length of data to be written
 			       par[]: Write to an array of data        
 Return:      void
-Others:         
+Others:      none   
 *******************************************************************/
 void BMD11M134::writeData(uint8_t id, uint8_t len, uint8_t par[])
 {  /* Array frame format：
@@ -551,7 +551,7 @@ Parameters:
              wlen:Length of data to be written
              wbuf[]: Write to an array of data        
 Return:      void  
-Others:         
+Others:      none   
 *******************************************************************/
 void BMD11M134::writeBytes(uint8_t wlen, uint8_t wbuf[])
 {    
@@ -571,7 +571,7 @@ Parameters:  rlen: The length of the data read
 			       rbuf[]: Store the read data        
 Return:      true: Obtaining data successfully 
              false: Data acquisition failure   
-Others:         
+Others:      none   
 **********************************************************/
 bool BMD11M134::readBytes(int rlen, uint8_t rbuf[])
 {

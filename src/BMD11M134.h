@@ -2,7 +2,7 @@
 File:         BMD11M134.h
 Author:       BEST MODULES CORP.
 Description:  Define classes and required variables
-Version:      V1.0.2   -- 2024-08-30
+Version:      V1.0.3   -- 2025-04-02
 **************************************************/
 #ifndef _BMD11M134_H
 #define _BMD11M134_H

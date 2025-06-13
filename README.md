@@ -7,6 +7,17 @@ BMD11M134
 
 The Best Modules BMD11M134 is a 4-digit digital tube module, which uses the I2C communication method. This document provides the description of the BMD11M134 Arduino Lib function and how to install the Arduino Lib. The example demonstrates the function of displaying characters by using digital tubes.
 
+#### Applicable types:
+<div align=center>
+
+|Paet No.   |Description                              |
+|:---------:|:---------------------------------------:|
+|BMD11M134 |4-Digit Digital Tube Module|
+|BMD11M134A|4-Digit Digital Tube Module|
+
+</div> 
+
+
 This library can be installed via the Arduino Library manager. Search for **BMD11M134**. 
 
 Repository Contents
@@ -31,6 +42,9 @@ Version History
 &emsp;&emsp;- Improve function functions: begin, shiftRight, shiftLeft;  
 &emsp;&emsp;- Improve the example content and update the schematic image: shift;  
 &emsp;&emsp;- Perfect some function header comments.  
+* **V1.0.3**  
+&emsp;&emsp;- Add applicable models: BMD11M134A; 
+
 
 License Information
 -------------------
